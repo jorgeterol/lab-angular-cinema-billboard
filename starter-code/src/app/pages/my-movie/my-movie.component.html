@@ -1,1 +1,25 @@
-{{movie.title}}
+<div class="movie">
+    <div class="poster-movie">
+        <img [src]="movie.poster" class="poster">
+    </div>
+    <div class="details">
+        <h4>Title:</h4>
+        <p>{{movie.title}}</p>
+        <h4>Synopsis:</h4>
+        <p>{{movie.synopsis}}</p>
+        <h4>Year:</h4>
+        <p>{{movie.year}}</p>
+        <h4>Director:</h4>
+        <p>{{movie.director}}</p>
+        <h4>Genres:</h4>
+        <div *ngFor="let genre of movie.genres">
+            <p>{{genre}}</p>
+        </div>
+        <h4>Actor:</h4>
+        <div *ngFor="let actor of movie.actors">
+            <p>{{actor}}</p>
+        </div>
+    </div>
+</div>
+
+

@@ -1,0 +1,10 @@
+.movies {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+}
+
+.poster {
+    width: 200px;
+}

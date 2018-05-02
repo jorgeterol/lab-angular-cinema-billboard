@@ -1,3 +1,8 @@
-<div *ngFor="let movie of movies">
-{{movie.title}}
+<div class="movies">
+    <div class="movie-card" *ngFor="let movie of movies">
+    <p>{{movie.title}}</p>
+    <img [src]="movie.poster" class="poster">
+    <a [routerLink]="['/movies', movie.id]">See more</a>
+    </div>
 </div>
+
